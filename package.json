@@ -1,33 +1,38 @@
 {
   "name": "casanje-portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/assets/index.html",
   "license": "MIT",
   "scripts": {
     "start": "parcel serve ./src/assets/index.html --port 3000",
     "build": "parcel build ./src/assets/index.html"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-regular-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "dotenv": "^8.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@parcel/transformer-typescript-tsc": "^2.0.0-alpha.3",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/styled-components": "^5.1.7",
     "parcel": "^2.0.0-beta.1",
     "react-is": "^17.0.1",
     "typescript": "^4.1.4"
   },
-  "alias": {
-    "assets": "./assets",
-    "utils": "./utils",
-    "models": "./models",
-    "stores": "./stores."
+  "resolutions": {
+    "styled-components": "^5"
   },
-  "source": "src/index.ts",
-  "module": "dist/index.js",
+  "source": "src/index.tsx",
+  "module": "dist/index.html",
   "types": "dist/index.d.ts"
 }
