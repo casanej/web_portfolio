@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel serve ./src/assets/index.html --port 3000",
-    "build": "parcel build ./src/assets/index.html"
+    "build": "parcel build ./src/assets/index.html",
+    "lint": "eslint ./src/**/*.ts ./src/**/*.tsx --fix"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
@@ -14,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "dotenv": "^8.2.0",
+    "mobx": "^6.1.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -25,12 +27,23 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-react": "^7.22.0",
+    "highlight": "^0.2.4",
     "parcel": "^2.0.0-beta.1",
     "react-is": "^17.0.1",
     "typescript": "^4.1.4"
   },
   "resolutions": {
     "styled-components": "^5"
+  },
+  "alias": {
+    "assets": "./src/assets",
+    "utils": "./src/utils",
+    "models": "./src/models",
+    "stores": "./src/stores."
   },
   "source": "src/index.tsx",
   "module": "dist/index.html",
